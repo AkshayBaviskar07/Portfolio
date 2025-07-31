@@ -14,6 +14,10 @@
     font-size: 1rem;
   }
 
+  .hero-right img {
+    overflow: hidden;
+  }
+
   .download-cv-btn {
     font-size: 1rem;
     padding: 12px 30px;
@@ -86,10 +90,10 @@
 
   .hamburger {
     display: flex;
-    position: absolute;
+    position: fixed;
     top: 20px;
     right: 20px;
-    z-index: 20;
+    z-index: 1001;
   }
 
   .header-second {
@@ -98,12 +102,13 @@
     justify-content: left;
     margin-top: 60px;
     padding: 20px 0;
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     right: 0;
-    background-color: rgba(25, 25, 36, 0.95);
+    background-color: rgba(25, 25, 36, 0.35);
     backdrop-filter: blur(5px);
+    z-index: 2000;
   }
 
   .header-second.active {
@@ -117,7 +122,6 @@
     gap: 15px;
     padding: 20px 0;
     list-style: none;
-    background-color: rgba(25, 25, 36, 0.95);
   }
 
   .header-second nav ul li {
@@ -125,7 +129,7 @@
     width: 100%;
     text-align: left;
   }
-    
+
   .header-second nav ul li a {
     color: #f0f0f0;
     text-decoration: none;
@@ -179,13 +183,21 @@
 
 /* VERY SMALL DEVICES */
 @media (max-width: 480px) {
+  .hamburger {
+    display: flex;
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 1001;
+  }
+
   .download-cv-btn {
     width: 100%;
     padding: 10px 0;
     text-align: center;
   }
 
-  .skills-header h2, 
+  .skills-header h2,
   .experience-header h2 {
     font-size: 2rem;
   }
