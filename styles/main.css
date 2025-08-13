@@ -54,12 +54,12 @@ header {
     display: flex;
     padding: 0;
     margin: 0;
-    font-size: 20px;
+    font-size: 1.3rem;
     list-style: none;
 }
 
 .header-second nav ul li {
-    margin: 0 15px;
+    margin: 0 13px;
 }
 
 .header-second nav ul li a {
@@ -126,13 +126,13 @@ header {
 }
 
 .hero-left h1 {
-    font-size: 4rem;
+    font-size: 3rem;
     line-height: 68px;
     margin-bottom: 8px;
 }
 
 .hero-role{
-    font-size: 2.2rem;
+    font-size: 2rem;
     font-weight: 500;
     line-height: 36px;
     margin-top: 20px;
@@ -145,7 +145,7 @@ header {
 }
 
 .hero-tagline{
-    font-size: 24px;
+    font-size: 20px;
     line-height: 32px;
     margin: 32px 0px;
     color: rgba(242, 243, 244, 0.584);
