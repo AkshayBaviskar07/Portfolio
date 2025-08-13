@@ -22,3 +22,48 @@ document.querySelectorAll('.header-second nav ul li a').forEach(link => {
     document.getElementById('navMenu').classList.remove('active');
   });
 });
+
+const roles = ["Thinker", "Executer", "Problem solver"];
+const spanElement = document.querySelector(".hero-role span");
+
+let roleIndex = 0;
+let charIndex = 0;
+let isDeleting = false;
+
+const typingSpeed = 100; // ms per character
+const deletingSpeed = 50; // ms per character
+const pauseDuration = 1500; // ms pause between roles
+
+function typeWriter() {
+    const currentRole = roles[roleIndex];
+    
+    if (!isDeleting) {
+        // Typing
+        spanElement.textContent = currentRole.substring(0, charIndex);
+        charIndex++;
+        
+        if (charIndex > currentRole.length) {
+            // Pause after typing
+            isDeleting = true;
+            setTimeout(typeWriter, pauseDuration);
+        } else {
+            setTimeout(typeWriter, typingSpeed);
+        }
+    } else {
+        // Deleting
+        spanElement.textContent = currentRole.substring(0, charIndex);
+        charIndex--;
+        
+        if (charIndex < 0) {
+            // Move to next role
+            isDeleting = false;
+            roleIndex = (roleIndex + 1) % roles.length;
+            setTimeout(typeWriter, typingSpeed);
+        } else {
+            setTimeout(typeWriter, deletingSpeed);
+        }
+    }
+}
+
+// Start the typewriter effect
+typeWriter();
