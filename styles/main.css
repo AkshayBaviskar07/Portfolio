@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Playwrite+HU:wght@100..400&family=Playwrite+VN+Guides&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Special+Gothic+Expanded+One&display=swap');
+
 @keyframes slideToUp {
     0% {
         transform: translateY(0%);
@@ -16,7 +18,8 @@
 html, body{
     background-color: rgb(25, 25, 36);;
     color: #f0f0f0;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Inter', sans-serif;
+    text-decoration: none;
     overflow-x: hidden;
 }
 
@@ -45,8 +48,7 @@ header {
 }
 
 .header-first{
-    font-family: "Special Gothic Expanded One", sans-serif;
-    font-size: 1.5rem;
+    font-size: 1.7rem;
     font-weight: 500;
 }
 
