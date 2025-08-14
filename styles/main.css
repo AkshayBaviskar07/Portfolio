@@ -1,3 +1,12 @@
+@keyframes slideToUp {
+    0% {
+        transform: translateY(0%);
+    }
+    100% {
+        transform: translateY(-3%);
+    }
+}
+
 *{
     padding: 0;
     margin: 0;
@@ -234,7 +243,10 @@ header {
     border: 0.1px solid rgb(132, 0, 255);
     border-radius: 16px;
     padding: 25px 20px;
-    background: linear-gradient(225deg, rgba(132, 0, 255, 0.1) 0%, rgba(230, 0, 255, 0.1) 100%);
+}
+
+.technologies:hover {
+    box-shadow: 0px 2px 25px rgb(132, 0, 255);
 }
 
 .tech-header {
@@ -294,6 +306,11 @@ header {
     margin-bottom: 8px;
 }
 
+.experience-content{
+    display: flex;
+    gap: 1rem;
+}
+
 .experience-info {
     display: flex;
     flex-direction: column;
@@ -301,10 +318,17 @@ header {
     gap: 20px;
     max-width: 600px;
     border: 0.3px solid rgb(132, 0, 255);
+    box-shadow: 0px 1px 5px rgb(132, 0, 255);
     border-radius: 16px;
     padding: 30px 40px;
     margin: 10px 0;
-    background: linear-gradient(225deg, rgba(132, 0, 255, 0.1) 0%, rgba(230, 0, 255, 0.1) 100%)
+    transition: 0.3s ease-in-out;
+}
+
+.experience-info:hover {
+    animation: slideToUp 0.5s ease forwards;
+    box-shadow: none;
+    gap: 1rem;
 }
 
 .experience-company {
@@ -396,7 +420,100 @@ header {
 }
 
 /* Education and Activities */
+.education-container {
+    width: 100%;
+    margin: 2rem 0;
+}
 
+.education-content{
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+.education-header{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 0.5rem;
+}
+
+.title {
+    font-size: 62px;
+    font-weight: 600;
+    color: rgb(242, 243, 244);
+    margin-top: 5px;
+}
+
+.desc {
+    font-size: 24px;
+    color: rgba(242, 243, 244, 0.584);
+    text-align: center;
+    padding: 0 2rem;
+}
+
+.educations {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.education{
+    display: flex;
+    margin-top: 1rem;
+    padding: 1rem 2rem;
+    border: 1px solid rgb(132, 0, 255);
+    box-shadow: 0px 4px 20px rgba(23, 92, 230, 0.15) ;
+    border-radius: 1rem;
+    gap: 2rem;
+    transition: 0.3s ease-in-out;
+}
+
+.education:hover{
+    animation: slideToUp 0.3s ease forwards;
+    box-shadow: none;
+}
+
+.image-container{
+    border: none;
+    overflow: hidden;
+    border-radius: 1rem;
+    background-color: rgb(0,0,0);
+    box-shadow: 0px 4px 8px rgba(0,0,0,0.1);
+    height: 5rem;
+}
+
+.image-container img {
+    height: 100%;
+}
+
+.education-title{
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: rgba(242, 243, 244, 0.6);
+}
+
+.education-deg {
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: rgba(177, 178, 179, 0.6);
+}
+
+.education-duration{
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: rgba(170, 171, 172, 0.6)
+}
+
+.education-perc{
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: rgba(170, 171, 172, 0.6);
+}
+
+/* footer */
 footer {
    max-width: 100%;
    border-top: 2px solid #7777;  
@@ -405,7 +522,6 @@ footer {
    padding-top: 1rem;
    font-size: 1.5rem;
    font-weight: 500;
-   letter-spacing: 1px;
 }
 
 .social-links {
@@ -413,6 +529,7 @@ footer {
     justify-content: center;
     align-items: center;
     gap: 1rem;
+    margin-top: 0.6rem;
 }
 
 .social-links a {
@@ -425,5 +542,3 @@ footer {
     color: #f9d923;
     transition: 0.2s ease-in-out;
 }
-
-

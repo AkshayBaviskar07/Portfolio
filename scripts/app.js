@@ -23,7 +23,7 @@ document.querySelectorAll('.header-second nav ul li a').forEach(link => {
   });
 });
 
-const roles = ["Thinker", "Executer", "Problem solver"];
+const roles = ["Developer", "Creator", "Executer"];
 const spanElement = document.querySelector(".hero-role span");
 
 let roleIndex = 0;

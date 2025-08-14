@@ -165,7 +165,9 @@
     flex-direction: column;
     align-items: center;
   }
-
+  .experience-content{
+    flex-direction: column;
+  }
   .experience-company {
     flex-direction: row;
     align-items: start;
@@ -178,6 +180,37 @@
 
   .experience-description ul {
     justify-content: flex-start;
+  }
+
+  .education {
+    padding: 1rem;
+    gap: 1rem;
+  }
+
+  .education-header .desc {
+    font-size: 1.3rem;
+    font-weight: 500;
+    padding: 0;
+  }
+
+  .image-container {
+    width: 80px;
+    flex-shrink: 0;
+  }
+
+  .image-container img {
+    width: 100%;
+    height: auto;
+  } 
+
+  .education-title {
+    font-size: 1.2rem;
+  }
+
+  .education-deg,
+  .education-duration,
+  .education-perc {
+    font-size: 1rem;
   }
 }
 
