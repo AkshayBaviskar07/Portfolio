@@ -65,7 +65,7 @@
 /* TABLET / MOBILE */
 
 @media (max-width: 768px) {
-  header {
+  .header-content {
     flex-direction: column;
     height: auto;
     padding: 20px;
@@ -73,16 +73,16 @@
     position: relative;
   }
 
-  .header-first {
+  .logo-content {
     text-align: left;
     width: auto;
     z-index: 10;
     padding: 0;
     margin-right: auto;
-    font-size: 15px;
+    font-size: 1.5rem;
   }
 
-  .header-third {
+  .github-btn {
     margin-top: 0;
     position: static;
     display: none;
@@ -91,59 +91,53 @@
   .hamburger {
     display: flex;
     position: fixed;
-    top: 20px;
+    top: 35px;
     right: 20px;
     z-index: 1001;
   }
 
-  .header-second {
+  .nav-items {
     display: none;
-    width: 100%;
-    justify-content: left;
-    margin-top: 60px;
-    padding: 20px 0;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%; 
     position: fixed;
-    top: 0;
+    top: 70px;
     left: 0;
-    right: 0;
-    background-color: rgba(25, 25, 36, 0.35);
-    backdrop-filter: blur(5px);
+    background: rgba(25, 25, 36, 0.95);
+    padding-top: 20px;
+    padding-bottom: 30px;
+    gap: 15px;
     z-index: 2000;
+    border-right: 1px solid rgba(255, 255, 255, 0.1);
   }
 
-  .header-second.active {
+  .nav-items.active {
     display: flex;
   }
 
-  .header-second nav ul {
+  .nav-items ul {
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
     width: 100%;
     gap: 15px;
-    padding: 20px 0;
-    list-style: none;
   }
 
-  .header-second nav ul li {
-    margin: 0;
+  .nav-items ul li {
     width: 100%;
-    text-align: left;
   }
 
-  .header-second nav ul li a {
-    color: #f0f0f0;
-    text-decoration: none;
+  .nav-items ul li a {
+    display: block;
+    width: 100%;
+    padding: 5px 0;
     font-size: 18px;
-    padding: 10px 20px;
-    display: block;
   }
 
-  .header-second .header-third {
+  .nav-items .github-btn {
     display: block;
-    position: static;
+    margin-top: 20px;
     width: 100%;
-    text-align: center;
-    margin-top: 8px;
   }
 
   .hero-content {
@@ -165,7 +159,7 @@
     flex-direction: column;
     align-items: center;
   }
-  .experience-content{
+  .experience-content {
     flex-direction: column;
   }
   .experience-company {
@@ -204,7 +198,7 @@
   .image-container img {
     width: 100%;
     height: auto;
-  } 
+  }
 
   .education-title {
     font-size: 1.2rem;
