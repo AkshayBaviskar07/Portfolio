@@ -155,6 +155,10 @@
     padding: 0 20px;
   }
 
+  .hero-left{
+    text-align: center;
+  }
+
   .technologies-container {
     flex-direction: column;
     align-items: center;
