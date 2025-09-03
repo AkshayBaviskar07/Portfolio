@@ -329,6 +329,8 @@ body {
 
 .experience-content {
   display: flex;
+  flex-direction: column;
+  align-items: center;
   gap: 1rem;
 }
 
@@ -337,13 +339,15 @@ body {
   flex-direction: column;
   align-items: center;
   gap: 20px;
-  max-width: 600px;
+  max-width: 920px;
+  width: 100%;
   border: 0.3px solid rgb(132, 0, 255);
   box-shadow: 0px 1px 5px rgb(132, 0, 255);
   border-radius: 16px;
   padding: 30px 40px;
   margin: 10px 0;
   transition: 0.3s ease-in-out;
+  box-sizing: border-box;
 }
 
 .experience-info:hover {
@@ -362,13 +366,10 @@ body {
 }
 
 .company-logo img {
-  width: 120px;
-  height: 100px;
-  border-radius: 20px;
-  object-fit: cover;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.7);
+  height: 50px;
+  border-radius: 10px;
   justify-content: flex-start;
-  /* padding: 10px; */
+  background-color: rgb(0, 0, 0);
 }
 
 .company-info {
@@ -379,36 +380,31 @@ body {
 }
 
 .company-info h3 {
-  font-size: 35px;
+  font-size: 24px;
   font-weight: 600;
   color: rgba(242, 243, 244, 0.6);
 }
 
 .company-info h5 {
-  font-size: 24px;
-  font-weight: 300;
+  font-size: 17px;
+  font-weight: 500;
   color: rgba(242, 243, 244, 0.8);
   margin-bottom: 5px;
 }
 
 .company-info p {
-  font-size: 20px;
+  font-size: 16px;
   color: rgba(242, 243, 244, 0.4);
-}
-
-.experience-info hr {
-  width: 100%;
-  border: 0.5px solid rgba(242, 243, 244, 0.2);
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
 }
 
 .experience-description {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  gap: 10px;
-  margin-top: 10px;
+  align-items: flex-start;
+  justify-content: flex-start;
   line-height: 1.4;
+  width: 100%;
+  padding: 0;
 }
 
 .experience-description p {
@@ -416,25 +412,23 @@ body {
   font-weight: 300;
   color: rgba(242, 243, 244, 0.6);
   text-align: left;
-  max-width: 600px;
+  margin-bottom: 10px;
 }
 
 .experience-description ul {
   display: flex;
   flex-direction: row;
-  justify-content: flex-start;
-  align-items: center;
   flex-wrap: wrap;
   list-style: none;
-  font-size: 20px;
+  font-size: 16px;
   color: rgba(242, 243, 244, 0.7);
-  gap: 10px;
+  gap: 5px;
   width: 100%;
 }
 
 .experience-description ul li {
   border: 0.3px solid rgba(132, 0, 255, 0.7);
-  padding: 10px 20px;
+  padding: 5px 10px;
   border-radius: 12px;
   background: linear-gradient(
     225deg,
